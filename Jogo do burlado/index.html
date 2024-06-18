@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jogo da Burla</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+<img src="descarregar.png" alt="Logotipo" class="logo">
+<h1>Jogo da Burla </h1>
+<div id="auth-container">
+<div id="register-form" class="form">
+<h2>Registar</h2>
+<input type="text" id="reg-username" placeholder="Nome de usuário" required>
+<input type="password" id="reg-password" placeholder="Senha" required>
+<input type="number" id="reg-age" placeholder="Idade" required>
+<button id="register-btn">Registar</button>
+<p>Já tem uma conta? <a href="#" id="show-login">Login</a></p>
+</div>
+<div id="login-form" class="form" style="display:none;">
+<h2>Login</h2>
+<input type="text" id="login-username" placeholder="Nome de usuário" required>
+<input type="password" id="login-password" placeholder="Senha" required>
+<button id="login-btn">Login</button>
+<p>Não tem uma conta? <a href="#" id="show-register">Registar</a></p>
+</div>
+</div>
+<div id="game-container" style="display:none;">
+<canvas id="gameCanvas" width="400" height="400"></canvas>
+<p id="score">Pontuação: 0</p>
+<button id="startBtn">Iniciar Jogo</button>
+</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
